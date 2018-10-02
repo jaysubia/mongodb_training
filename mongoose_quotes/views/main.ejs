@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mongoose Tutorial </title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+     
+  <h1>Amazing Quotes</h1>
+    <% for (var i in info) { %>
+     <h3>"<%= info[i].quote %>"</h3>
+      <h3>- <%= info[i].name %> @ <%= info[i].createdAt %> </h3>
+     
+    <% } %>
+  <a href="/" class="btn btn-primary">Home</a>
+
+</body>
+</html> 
